@@ -127,7 +127,7 @@ app.use("/",userRouter);
 
 
 app.get("/", (req, res) => {
-    res.render("listings/home"); 
+    res.render("listings/"); 
 });
 
 
