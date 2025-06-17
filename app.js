@@ -126,6 +126,12 @@ app.use("/",userRouter);
 // });
 
 
+app.get("/", (req, res) => {
+    res.render("listings/home"); 
+});
+
+
+
 app.all("*",(req,res,next)=>{
     next(new ExpressError(404,"page not found"));
 });
